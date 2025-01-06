@@ -2,7 +2,9 @@ package com.example.demo.model;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -10,7 +12,9 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
+@AllArgsConstructor
 @Table(name = "debts")
+@NoArgsConstructor
 public class Debt {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
