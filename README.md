@@ -1,7 +1,7 @@
 # Sistema de Votação Cooperativa
 
 ## Descrição do Projeto
-Este projeto é uma API REST para gerenciar contas. A aplicação permite criar pautas, abrir sessões de votação, registrar votos e obter resultados. Também inclui uma funcionalidade para validar CPFs e simular cenários de alta carga.
+O projeto consiste em uma aplicação frontend/backend que auxilia usuários na organização de suas dívidas, promovendo uma gestão financeira eficiente. A solução deve oferecer as seguintes funcionalidades:
 
 ---
 
@@ -54,5 +54,14 @@ CREATE TABLE debts (
     FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
 );
 
+
+```
+
+### 3.0 Teste Unitários e de Integração
+O projeto possui testes unitários e de integração. Os testes 
+unitários verificam o funcionamento de partes isoladas do código, 
+enquanto os testes de integração checam a interação entre os 
+componentes do sistema. Ambos ajudam a garantir que o sistema 
+funcione corretamente e sem erros.
 
 ```
